@@ -1,7 +1,7 @@
 import { ThemeProvider } from "next-themes"
-import "./index.css"
-import {fuchsia} from "tailwindcss/colors";
 
+import {fuchsia} from "tailwindcss/colors";
+import "../styles/index.css"
 
 
 const MyApp = ({Component, pageProps}) => {

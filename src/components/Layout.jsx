@@ -1,6 +1,9 @@
 import { Helmet } from "react-helmet"
 import Header from "./Header"
 
+import React from "react";
+
+
 
 const Layout = ({title, description, children}) => {
   return (
@@ -14,7 +17,9 @@ const Layout = ({title, description, children}) => {
         <meta property="og:description" content={description} />
         <link rel="icon" href="/favicon.ico" />
  </Helmet>
- <div className="relative z-10 px-3 overflow-hidden min-h-screen bg-primary-light antialiased font-montserrat dark:bg-gray-900 dark:text-white">
+ <div className="relative z-10 px-3 overflow-hidden min-h-screen
+  bg-primary-light antialiased font-montserrat dark:bg-gray-900
+   dark:text-white">
         <div className="w-full h-full">
           <Header />
           {children}
@@ -25,5 +30,6 @@ const Layout = ({title, description, children}) => {
 };
 
 export default Layout;
+
 
 
