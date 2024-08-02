@@ -2,7 +2,7 @@ const theme = require("tailwindcss/defaultTheme");
 
 export default {
   mode:"jit",
-  darkMode:
+  darkMode:"class",
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",

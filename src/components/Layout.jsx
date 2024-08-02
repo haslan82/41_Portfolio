@@ -7,7 +7,7 @@ const Layout = ({title, description, children}) => {
     <>
 
      <Helmet>
-       <title>{title}</title>
+     <title>{title}</title>
         <meta name="description" content={description} />
         <meta property="og:site_name" content="Portfolio" />
         <meta property="og:title" content={title} />
@@ -15,20 +15,15 @@ const Layout = ({title, description, children}) => {
         <link rel="icon" href="/favicon.ico" />
  </Helmet>
  <div className="relative z-10 px-3 overflow-hidden min-h-screen bg-primary-light antialiased font-montserrat dark:bg-gray-900 dark:text-white">
-     
-   <div className="w-full h-full">
-    <Header/>
-    {children}
-    </div>
-         
-
-           </div>
-
-     
+        <div className="w-full h-full">
+          <Header />
+          {children}
+        </div>
+      </div>
     </>
-  )
-}
+  );
+};
 
-export default Layout
+export default Layout;
 
 
